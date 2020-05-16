@@ -1,0 +1,82 @@
+@import url("style.css");
+
+
+
+
+.shop-card{
+    width: 200px;
+    position:absolute;
+    background: var(--bg-primary);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    margin: 5em 0em 0em 20em;
+}
+.shop-card .title{
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: var(--text-primary);
+    margin: 5px 0px;
+}
+
+.shop-card .desc{
+    font-size: 17px;
+    opacity: 0.8;
+    margin-bottom: 3px;
+    color: var(--text-secondary);
+}
+
+.shop-card .price{
+    color: var(--text-secondary);
+    padding-bottom: 5px;
+}
+
+.shop-card figure{
+    overflow: hidden;
+    outline: none;
+}
+
+.shop-card figure img{
+    width:100%;
+    background-color: var(--bg-primary);
+}
+
+.shop-card .cta{
+    width:100%;
+    height:100%;
+}
+
+.shop-card .cta::after{
+    content:"";
+    display: table;
+    clear: both;
+   
+}
+
+.shop-card .btn{
+    z-index: 1;
+    display:block;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 10px 9px 12px 9px;
+    cursor: pointer;
+    background-color: var(--neon);
+    box-shadow: 0 0 5px var(--neon-shadow);
+    box-shadow: 0 0 7px var(--neon);
+    width:100%;
+    height:auto;
+    border-radius: 5px;
+}
+
+.product-img{
+    max-width: 100%;
+    height: auto;
+}
+
+figure{
+    padding:10px 10px 0px 10px;
+}

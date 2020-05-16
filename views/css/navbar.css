@@ -1,0 +1,89 @@
+@import url("global.css");
+
+/* vh is relative to the viewport height*/
+.navbar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+}
+
+.navbar:hover{
+    width:16rem;
+}
+
+.feather{
+    width:50%;
+    margin: 1rem 0rem 1rem 0rem;
+    color:var(--text-primary);
+}
+
+
+.navbar-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height:100%;
+}
+
+.nav-item{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width:100%;
+
+}
+
+.nav-item:hover .feather{
+    color:black;
+}
+
+.nav-item:last-child{
+    margin-top:auto;
+}
+
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    
+}
+.link-text{
+    display: none;
+    
+}
+
+
+
+.navbar:hover .nav-item{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.navbar:hover .link-text{
+    display: flex;
+    flex-direction: row;
+    color: var(--text-primary);
+}
+
+.nav-item:hover {
+    background-color: var(--neon);
+    box-shadow: 0 0 5px var(--neon);
+    box-shadow: 0 0 25px var(--neon);
+    box-shadow: 0 0 50px var(--neon);    
+}
+
+.nav-item:hover .link-text{
+    color:black;
+}
+
+.logo{
+    font-weight:bold;
+    text-align: center;
+}
